@@ -26,13 +26,13 @@ The technologies used is up to the student.
 
 # Description
 
-Frontend application built with React designed to work with the backend server `TP_POE_Backend` from [https://github.com/Alain-RAMBELOSON/TP_POE_Backend](https://github.com/tintincita/FilRougeM2i)
+Frontend application built with React designed to work with the backend server [TP_POE_Backend](https://github.com/Alain-RAMBELOSON/TP_POE_Backend).
 
 # Usage
 
 ### Run the backend server
 
-Get and run the backend server `TP_POE_Backend` from https://github.com/Alain-RAMBELOSON/TP_POE_Backend
+Run the backend server [TP_POE_Backend](https://github.com/Alain-RAMBELOSON/TP_POE_Backend).
 
 ### Run the frontend application
 
