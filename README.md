@@ -19,14 +19,11 @@ The technologies used are up to the student.
 
 # Personal goals
 
-- Create comprehensive pre-production documentation ( Entity Relationship Diagram, use cases, browser and mobile wireframes )
-- Maintainable, extensible and intelligible folder and file architecture
-- Use the minimum number of external packages possible
-- Don't violate the previous principles
+- Reusable, maintainable, extensible and intelligible backend folder and file architecture
 
 # Description
 
-Frontend application built with React designed to work with the backend server [TP_POE_Backend](https://github.com/Alain-RAMBELOSON/TP_POE_Backend).
+Frontend application built with SolidJS designed to work with the backend server [TP_POE_Backend](https://github.com/Alain-RAMBELOSON/TP_POE_Backend).
 
 # Usage
 
