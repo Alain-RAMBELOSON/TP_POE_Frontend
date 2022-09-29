@@ -3,7 +3,7 @@
 # Context
 
 Assessment for [M2i Formation](https://www.m2iformation.fr/).  
-Wording provided by [Semifir](https://fr.linkedin.com/company/semifir).  
+Wording provided by [Semifir](https://fr.linkedin.com/company/semifir).
 
 ### Requirements
 
@@ -33,8 +33,8 @@ Run the backend server [TP_POE_Backend](https://github.com/Alain-RAMBELOSON/TP_P
 
 ### Run the frontend application
 
-- Download or clone this repository  
-- Open a terminal at the root of this repository  
+- Download or clone this repository
+- Open a terminal at the root of this repository
 - Open a terminal at the root of the repository.
 - Run the `'npm i'` command
 - Run the `'npm start'` command
