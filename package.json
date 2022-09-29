@@ -1,0 +1,38 @@
+{
+  "name": "vite-template-solid",
+  "version": "0.0.0",
+  "description": "TP POE Frontend",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alain-RAMBELOSON/TP_POE_Frontend.git"
+  },
+  "keywords": [
+    "m2i",
+    "semifir",
+    "poe",
+    "fullstack",
+    "tp",
+    "backend",
+    "server"
+  ],
+  "author": "Alain RAMBELOSON <alain.rambeloson@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alain-RAMBELOSON/TP_POE_Frontend/issues"
+  },
+  "homepage": "https://github.com/Alain-RAMBELOSON/TP_POE_Frontend#readme",
+  "devDependencies": {
+    "typescript": "^4.8.2",
+    "vite": "^3.0.9",
+    "vite-plugin-solid": "^2.3.0"
+  },
+  "dependencies": {
+    "solid-js": "^1.5.1"
+  }
+}
