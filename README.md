@@ -2,7 +2,7 @@
 
 # Description
 
-Frontend application built with SolidJS designed to work with the backend server [TP_POE_Backend](https://github.com/Alain-RAMBELOSON/TP_POE_Backend).
+Frontend application built with SolidJS designed to work with the database server [TP_POE_Backend](https://github.com/Alain-RAMBELOSON/TP_POE_Backend).
 
 # Context
 
