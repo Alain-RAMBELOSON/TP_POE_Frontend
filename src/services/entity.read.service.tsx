@@ -10,7 +10,7 @@ export default async function getEntityByID(request: Request) {
     url = config.api.vehicle.getVehicleByID;
   }
 
-  return await axios(`${url}${request.id}`)
+  return await axios(`${url}${request._id}`)
     .then((response) => response.data)
     .catch((error) => console.log(error));
 }

@@ -2,7 +2,7 @@ import Entity from "../enum/entity.enum";
 
 type Request = {
   entity: Entity;
-  id?: String;
+  _id?: String;
   body?: any;
 };
 
