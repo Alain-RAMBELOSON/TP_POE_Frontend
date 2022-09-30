@@ -1,5 +1,7 @@
+import Entity from "../enum/entity.enum";
+
 type Request = {
-  entity: string;
+  entity: Entity;
   url: string;
   id: string;
   body: {};
