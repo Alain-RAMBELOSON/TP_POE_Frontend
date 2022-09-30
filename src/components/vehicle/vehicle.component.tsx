@@ -1,15 +1,7 @@
-import { Component, createResource } from "solid-js";
+import type { Component } from "solid-js";
 
-const id = "63340fb3d817b5ae8fe4bcd8";
-
-const fetchTodos = async (id: string) => {
-  return fetch(`http://localhost:3001/api/vehicle/${id}`).then((r) => r.json());
+const Rent: Component = (props: any) => {
+  return <div>Vehicle</div>;
 };
 
-const VehicleComponent: Component = () => {
-  const [todos] = createResource(id, fetchTodos);
-
-  return <div>{JSON.stringify(todos(), null, 2)}</div>;
-};
-
-export default VehicleComponent;
+export default Rent;
