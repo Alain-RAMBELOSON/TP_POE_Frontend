@@ -1,5 +1,9 @@
 # TP_POE_Frontend
 
+# Description
+
+Frontend application built with SolidJS designed to work with the backend server [TP_POE_Backend](https://github.com/Alain-RAMBELOSON/TP_POE_Backend).
+
 # Context
 
 Assessment for [M2i Formation](https://www.m2iformation.fr/).  
@@ -32,10 +36,6 @@ The technologies used are up to the student.
 
 - Reusable, maintainable, extensible and intelligible folder and file architecture
 - Set some constructs to allow multi database connection 
-
-# Description
-
-Frontend application built with SolidJS designed to work with the backend server [TP_POE_Backend](https://github.com/Alain-RAMBELOSON/TP_POE_Backend).
 
 # Usage
 
