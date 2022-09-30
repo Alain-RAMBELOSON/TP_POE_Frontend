@@ -1,5 +1,9 @@
 # TP_POE_Frontend
 
+# Description
+
+Frontend application built with SolidJS designed to work with the backend server [TP_POE_Backend](https://github.com/Alain-RAMBELOSON/TP_POE_Backend).
+
 # Context
 
 Assessment for [M2i Formation](https://www.m2iformation.fr/).  
@@ -17,14 +21,21 @@ The technologies used are up to the student.
 - Create a rent
 - Allow the listing, editing and deletion of the vehicles, customers and rents
 
+### [M2i Formation](https://www.m2iformation.fr/) training program
+
+6 months on site studying the following :
+
+**Fundamentals** : algorithmic, software architecture, unit Test and TDD, Scrum and Agile  
+**Languages** : HTML, CSS, JavaScript, TypeScript, SQL  
+**Frameworks** : NodeJS, Express, Angular, React, VueJS  
+**Databases** : MySQL, MongoDB  
+**Cloud** : AWS  
+**DevTools** : Git
+
 # Personal goals
 
 - Reusable, maintainable, extensible and intelligible folder and file architecture
 - Set some constructs to allow multi database connection 
-
-# Description
-
-Frontend application built with SolidJS designed to work with the backend server [TP_POE_Backend](https://github.com/Alain-RAMBELOSON/TP_POE_Backend).
 
 # Usage
 
