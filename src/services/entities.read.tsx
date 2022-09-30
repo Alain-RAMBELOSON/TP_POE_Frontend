@@ -3,11 +3,11 @@ import Request from "../types/request.type";
 import Entity from "../enum/entity.enum";
 import axios from "axios";
 
-const getEntityByID = async (request: Request) => {
+const getEntities = async (request: Request) => {
   if (request.entity === Entity.Vehicle) {
-    request.url = config.api.getVehicleByID;
+    request.url = config.api.getVehicles;
   }
-  return axios(`${request.url}${request.id}`).then((response) => response.data);
+  return axios(`${request.url}$`).then((response) => response.data);
 };
 
-export default getEntityByID;
+export default getEntities;
