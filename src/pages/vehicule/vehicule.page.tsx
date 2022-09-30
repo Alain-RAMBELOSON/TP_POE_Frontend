@@ -1,20 +1,19 @@
 import { Component, createResource } from "solid-js";
 
 import * as config from "../../config.json";
-import { getItemByID } from "../../services/entity.read.service";
-
-("63340fb3d817b5ae8fe4bcd8");
+import Entity from "../../enum/entity.enum";
+import getEntities from "../../services/entity.read.service";
 
 const request = {
-  entity: "Vehicle",
+  entity: Entity.Vehicle,
   url: config.api.getVehicleByID,
-  id: "63340fb3d817b5ae8fe4bcd8",
-  body: [],
+  id: "",
+  body: {},
 };
 
 const VehiclePage: Component = () => {
-  const [todos] = createResource(request, getItemByID);
-  return <div>My{JSON.stringify(todos(), null, 2)}</div>;
+  const [vehicles] = createResource(request, getEntities);
+  return <div>Vehicles : {JSON.stringify(vehicles(), null, 2)}</div>;
 };
 
 export default VehiclePage;
