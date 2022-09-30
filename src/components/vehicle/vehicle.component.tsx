@@ -1,7 +1,7 @@
 import type { Component } from "solid-js";
 
-const Rent: Component = (props: any) => {
+const Vehicle: Component = (props) => {
   return <div>Vehicle</div>;
 };
 
-export default Rent;
+export default Vehicle;

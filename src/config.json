@@ -1,6 +1,8 @@
 {
   "api": {
-    "getVehicleByID": "http://localhost:3001/api/vehicle/",
-    "getVehicles": "http://localhost:3001/api/vehicle/"
+    "vehicle": {
+      "getVehicleByID": "http://localhost:3001/api/vehicle/",
+      "getVehicles": "http://localhost:3001/api/vehicle/"
+    }
   }
 }

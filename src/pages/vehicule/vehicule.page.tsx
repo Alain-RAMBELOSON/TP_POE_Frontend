@@ -1,30 +1,28 @@
 import { Component, createResource, For } from "solid-js";
 
-import * as config from "../../config.json";
 import Entity from "../../enum/entity.enum";
-import getEntities from "../../services/entity.read.service";
-import Vehicle from "../../components/vehicle/vehicle.component";
+import getEntityByID from "../../services/entity.read.service";
+import getEntities from "../../services/entities.read.service";
 
-const request = {
+const requestEntity = {
   entity: Entity.Vehicle,
-  url: config.api.getVehicleByID,
-  id: "",
-  body: {},
+  id: "63340fb3d817b5ae8fe4bcd8",
+};
+
+const requestEntities = {
+  entity: Entity.Vehicle,
 };
 
 const VehiclePage: Component = () => {
-  const [vehicles] = createResource(request, getEntities);
+  const [vehicle] = createResource(requestEntity, getEntityByID);
+  const [vehicles] = createResource(requestEntities, getEntities);
+
   return (
     <>
-      <div>Vehicles : {JSON.stringify(vehicles(), null, 2)}</div>
-
-      <For each={vehicles()} fallback={<div>Loading...</div>}>
-        {(vehicle) => (
-          <div>
-            <Vehicle />
-          </div>
-        )}
-      </For>
+      <div>Vehicle :</div>
+      <div>{JSON.stringify(vehicle(), null, 2)}</div>
+      <div>Vehicles :</div>
+      <div>{JSON.stringify(vehicles(), null, 2)}</div>
     </>
   );
 };

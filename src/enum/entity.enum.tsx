@@ -1,5 +1,5 @@
 enum Entity {
-  Vehicle = "vehicle",
+  Vehicle = "Vehicle",
   Customer = "Customer",
   Rent = "Rent",
 }

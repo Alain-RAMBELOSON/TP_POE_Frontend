@@ -4,10 +4,15 @@ import Entity from "../enum/entity.enum";
 import axios from "axios";
 
 const getEntities = async (request: Request) => {
+  let url: String = "";
+
   if (request.entity === Entity.Vehicle) {
-    request.url = config.api.getVehicles;
+    url = config.api.vehicle.getVehicles;
   }
-  return axios(`${request.url}$`).then((response) => response.data);
+
+  return await axios(`${url}`)
+    .then((response) => response.data)
+    .catch((error) => console.log(error));
 };
 
 export default getEntities;
