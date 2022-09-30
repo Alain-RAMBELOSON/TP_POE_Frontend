@@ -37,23 +37,27 @@ The technologies used are up to the student.
 - Think systems first not features
 - Reusable, maintainable, extensible and intelligible folder and file architecture
 - Set some constructs to allow multi database connection
-- Use at least one thechnology that I never used before
+- Use at least one unknown technology
 
 # Usage
 
-### Run the backend server
+### Run the database server
 
-Run the backend server [TP_POE_Backend](https://github.com/Alain-RAMBELOSON/TP_POE_Backend).
+Run the database server [TP_POE_Backend](https://github.com/Alain-RAMBELOSON/TP_POE_Backend).
 
 ### Run the frontend application
 
 - Download or clone this repository
-- Open a terminal at the root of this repository
-- Open a terminal at the root of the repository.
-- Run the `'npm i'` command
-- Run the `'npm start'` command
-
-Open your web browser and go to the following address
+- Open a terminal at the root of the repository
+- Run the next command to fetch all the dependencies
+```
+npm i
+```
+- Run the next command to run the application
+```
+npm start
+```
+- Open your web browser and go to the following address
 ```
 http://localhost:3000/
 ```
