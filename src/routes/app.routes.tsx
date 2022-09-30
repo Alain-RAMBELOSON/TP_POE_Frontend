@@ -1,8 +1,8 @@
 import type { Component } from "solid-js";
 import { Routes, Route } from "@solidjs/router";
 
-import Vehicle from "../components/vehicle/vehicle.component";
-import Customer from "../components/customer/customer.component";
+import Vehicle from "../pages/vehicule/vehicule.page";
+import Customer from "../pages/customer/customer.page";
 import Rent from "../components/rent/rent.component";
 
 const AppRoutes: Component = () => {
@@ -10,7 +10,6 @@ const AppRoutes: Component = () => {
     <Routes>
       <Route path="/vehicle" component={Vehicle} />
       <Route path="/customer" component={Customer} />
-      <Route path="/rent" component={Rent} />
     </Routes>
   );
 };

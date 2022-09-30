@@ -27,13 +27,14 @@
     "url": "https://github.com/Alain-RAMBELOSON/TP_POE_Frontend/issues"
   },
   "homepage": "https://github.com/Alain-RAMBELOSON/TP_POE_Frontend#readme",
-  "devDependencies": {
-    "typescript": "^4.8.2",
-    "vite": "^3.0.9",
-    "vite-plugin-solid": "^2.3.0"
-  },
   "dependencies": {
     "@solidjs/router": "^0.4.3",
     "solid-js": "^1.5.1"
+  },
+  "devDependencies": {
+    "axios": "^0.27.2",
+    "typescript": "^4.8.2",
+    "vite": "^3.0.9",
+    "vite-plugin-solid": "^2.3.0"
   }
 }

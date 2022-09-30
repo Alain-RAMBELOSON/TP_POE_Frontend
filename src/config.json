@@ -1,0 +1,5 @@
+{
+  "api": {
+    "getVehicleByID": "http://localhost:3001/api/vehicle/"
+  }
+}
