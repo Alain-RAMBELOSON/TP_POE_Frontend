@@ -19,7 +19,8 @@ The technologies used are up to the student.
 
 # Personal goals
 
-- Reusable, maintainable, extensible and intelligible backend folder and file architecture
+- Reusable, maintainable, extensible and intelligible folder and file architecture
+- Set some constructs to allow multi database connection 
 
 # Description
 
@@ -38,3 +39,8 @@ Run the backend server [TP_POE_Backend](https://github.com/Alain-RAMBELOSON/TP_P
 - Open a terminal at the root of the repository.
 - Run the `'npm i'` command
 - Run the `'npm start'` command
+
+Open your web browser and go to the following address
+```
+http://localhost:3000/
+```
