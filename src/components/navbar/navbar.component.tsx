@@ -1,7 +1,6 @@
-import type { Component } from "solid-js";
 import { Link } from "@solidjs/router";
 
-const Navbar: Component = () => {
+export default function Navbar() {
   return (
     <>
       <nav>
@@ -10,6 +9,4 @@ const Navbar: Component = () => {
       </nav>
     </>
   );
-};
-
-export default Navbar;
+}

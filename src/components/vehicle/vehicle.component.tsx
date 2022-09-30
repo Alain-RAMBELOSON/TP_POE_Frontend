@@ -1,7 +1,7 @@
-import type { Component } from "solid-js";
-
-const Vehicle: Component = (props) => {
-  return <div>Vehicle</div>;
-};
-
-export default Vehicle;
+export default function Vehicule(props: any) {
+  return (
+    <>
+      <div>Vehicule {props.prop}</div>
+    </>
+  );
+}

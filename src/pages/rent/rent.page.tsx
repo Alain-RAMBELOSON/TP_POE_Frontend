@@ -1,7 +1,3 @@
-import type { Component } from "solid-js";
-
-const RentPage: Component = () => {
+export default function RentPage() {
   return <div>Rent Page</div>;
-};
-
-export default RentPage;
+}

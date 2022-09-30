@@ -3,7 +3,7 @@ import Request from "../types/request.type";
 import Entity from "../enum/entity.enum";
 import axios from "axios";
 
-const getEntities = async (request: Request) => {
+export default async function getEntities(request: Request) {
   let url: String = "";
 
   if (request.entity === Entity.Vehicle) {
@@ -14,5 +14,3 @@ const getEntities = async (request: Request) => {
     .then((response) => response.data)
     .catch((error) => console.log(error));
 };
-
-export default getEntities;

@@ -3,6 +3,7 @@ import { Component, createResource, For } from "solid-js";
 import Entity from "../../enum/entity.enum";
 import getEntityByID from "../../services/entity.read.service";
 import getEntities from "../../services/entities.read.service";
+import Vehicule from "../../components/vehicle/vehicle.component";
 
 const requestEntity = {
   entity: Entity.Vehicle,
@@ -13,18 +14,20 @@ const requestEntities = {
   entity: Entity.Vehicle,
 };
 
-const VehiclePage: Component = () => {
-  const [vehicle] = createResource(requestEntity, getEntityByID);
-  const [vehicles] = createResource(requestEntities, getEntities);
+export default function VehiclePage() {
+  const [getVehicle] = createResource(requestEntity, getEntityByID);
+  const [getVehicles] = createResource(requestEntities, getEntities);
 
   return (
     <>
       <div>Vehicle :</div>
-      <div>{JSON.stringify(vehicle(), null, 2)}</div>
+      <div>{JSON.stringify(getVehicle(), null, 2)}</div>
       <div>Vehicles :</div>
-      <div>{JSON.stringify(vehicles(), null, 2)}</div>
+      <div>{JSON.stringify(getVehicles(), null, 2)}</div>
+
+      <For each={getVehicles()} fallback={<div>Loading...</div>}>
+        {(vehicule) => <Vehicule prop="prop" />}
+      </For>
     </>
   );
-};
-
-export default VehiclePage;
+}
