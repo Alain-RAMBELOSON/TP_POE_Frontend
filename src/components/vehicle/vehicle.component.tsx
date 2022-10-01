@@ -1,7 +1,7 @@
 import { createResource } from "solid-js";
 import Entity from "../../enum/entity.enum";
 import getEntityByID from "../../services/entity.read.service";
-import Card from "../customer/card.component";
+import Card from "../card/card.component";
 
 export default function Vehicle(props: any) {
   const request = {
