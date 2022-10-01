@@ -4,6 +4,8 @@ import getEntityByID from "../../services/entity.read.service";
 import Card from "../card/card.component";
 
 export default function Vehicle(props: any) {
+  console.log("Vehicle Component", props.vehicle);
+
   const request = {
     entity: Entity.Vehicle,
     _id: props.vehicle._id,
@@ -13,10 +15,7 @@ export default function Vehicle(props: any) {
 
   return (
     <>
-      <Card
-        type={Entity.Vehicle}
-        entity={JSON.stringify(getVehicle(), null, 2)}
-      />
+      <Card type={Entity.Vehicle} entity={props.vehicle} />
     </>
   );
 }
