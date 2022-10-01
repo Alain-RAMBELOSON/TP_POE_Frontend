@@ -49,7 +49,7 @@ Run the database server [TP_POE_Backend](https://github.com/Alain-RAMBELOSON/TP_
 
 - Download or clone this repository
 - Open a terminal at the root of the repository
-- Run the next command to fetch all the dependencies
+- Run the next command to install all the dependencies
 ```
 npm i
 ```
@@ -57,7 +57,7 @@ npm i
 ```
 npm start
 ```
-- Open your web browser and go to the following address
+- Open your web browser and go to the following address to use the application
 ```
 http://localhost:3000/
 ```
