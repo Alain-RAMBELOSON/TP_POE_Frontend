@@ -1,21 +1,7 @@
-import { createResource } from "solid-js";
-import Entity from "../../enum/entity.enum";
-import getEntityByID from "../../services/entity.read.service";
+import VehicleProps from "../../props/vehicle.props";
 import Card from "../card/card.component";
+import Entity from "../../enum/entity.enum";
 
-export default function Vehicle(props: any) {
-  console.log("Vehicle Component", props.vehicle);
-
-  const request = {
-    entity: Entity.Vehicle,
-    _id: props.vehicle._id,
-  };
-
-  const [getVehicle] = createResource(request, getEntityByID);
-
-  return (
-    <>
-      <Card type={Entity.Vehicle} entity={props.vehicle} />
-    </>
-  );
+export default function Vehicle(props: VehicleProps) {
+  return <Card type={Entity.Vehicle} entity={props.vehicle} />;
 }
