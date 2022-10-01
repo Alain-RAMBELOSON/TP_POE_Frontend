@@ -1,6 +1,7 @@
 import { Routes, Route } from "@solidjs/router";
 
-import VehiclePage from "../pages/vehicule/vehicule.page";
+
+import VehiclePage from "../pages/vehicle/vehicle.page";
 import CustomerPage from "../pages/customer/customer.page";
 import RentPage from "../pages/rent/rent.page";
 
