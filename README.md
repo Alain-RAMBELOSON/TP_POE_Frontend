@@ -1,5 +1,12 @@
 # TP_POE_Frontend
 
+# Summary
+
+- [Description](https://github.com/Alain-RAMBELOSON/TP_POE_Backend/blob/main/README.md#description)
+- [Context](https://github.com/Alain-RAMBELOSON/TP_POE_Backend/blob/main/README.md#context)
+- [Personal goals](https://github.com/Alain-RAMBELOSON/TP_POE_Backend/blob/main/README.md#personal-goals)
+- [Usage](https://github.com/Alain-RAMBELOSON/TP_POE_Backend/blob/main/README.md#usage)
+
 # Description
 
 Frontend application built with SolidJS designed to work with the database server [TP_POE_Backend](https://github.com/Alain-RAMBELOSON/TP_POE_Backend).
