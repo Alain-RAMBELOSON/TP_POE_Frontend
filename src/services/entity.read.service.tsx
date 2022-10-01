@@ -3,7 +3,7 @@ import { IRequest } from "../interfaces/request.interface";
 import { EEntity } from "../enum/entity.enum";
 import { IVehicle } from "../interfaces/vehicle.interface";
 
-export default async function getEntityByID(request: IRequest) {
+const getEntityByID = async (request: IRequest): Promise<IVehicle> => {
   let url: String = "";
 
   if (request.entity === EEntity.Vehicle) {
@@ -11,8 +11,10 @@ export default async function getEntityByID(request: IRequest) {
   }
 
   const response = await fetch(`${url}${request._id}`);
-  const results = await response.json();
-  const documents = results as IVehicle;
+  const json = await response.json();
+  const data = json as IVehicle;
 
-  return documents;
-}
+  return data;
+};
+
+export { getEntityByID };

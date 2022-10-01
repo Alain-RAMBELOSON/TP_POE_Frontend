@@ -13,7 +13,7 @@ const VehiclePage: Component = () => {
 
   onMount(async () => {
     const response = await getEntities(request);
-    console.log("VehiclePage", response);
+    console.log("Vehicle Page", response);
     setVehicles(response);
   });
 

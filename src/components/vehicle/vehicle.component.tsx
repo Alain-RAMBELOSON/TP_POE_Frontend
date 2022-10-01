@@ -4,7 +4,7 @@ import { EEntity } from "../../enum/entity.enum";
 import { IRequest } from "../../interfaces/request.interface";
 import { IVehicle } from "../../interfaces/vehicle.interface";
 import { PVehicle } from "../../props/vehicle.props";
-import getEntityByID from "../../services/entity.read.service";
+import { getEntityByID } from "../../services/entity.read.service";
 
 const Vehicle: Component<PVehicle> = (props) => {
   const request: IRequest = {
@@ -16,7 +16,7 @@ const Vehicle: Component<PVehicle> = (props) => {
 
   onMount(async () => {
     const response = await getEntityByID(request);
-    console.log("VehicleComponent", response);
+    console.log("Vehicle Component", response);
     setVehicle(response);
   });
 
