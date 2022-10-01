@@ -1,9 +1,9 @@
-import Entity from "../enum/entity.enum";
-import Vehicule from "../types/vehicle.type";
+import { EEntity } from "../enum/entity.enum";
+import { IVehicle } from "../interfaces/vehicle.interface";
 
-type CardProps = {
-  type: Entity;
-  entity: Vehicule | unknown;
-};
+interface ICard {
+  type: EEntity;
+  entity: IVehicle;
+}
 
-export default CardProps;
+export type { ICard };

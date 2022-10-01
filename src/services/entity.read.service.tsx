@@ -1,16 +1,18 @@
 import * as config from "../config.json";
-import Request from "../types/request.type";
-import Entity from "../enum/entity.enum";
-import axios from "axios";
+import { IRequest } from "../interfaces/request.interface";
+import { EEntity } from "../enum/entity.enum";
+import { IVehicle } from "../interfaces/vehicle.interface";
 
-export default async function getEntityByID(request: Request) {
+export default async function getEntityByID(request: IRequest) {
   let url: String = "";
 
-  if (request.entity === Entity.Vehicle) {
+  if (request.entity === EEntity.Vehicle) {
     url = config.api.vehicle.getVehicleByID;
   }
 
-  return await axios(`${url}${request._id}`)
-    .then((response) => response.data)
-    .catch((error) => console.log(error));
+  const response = await fetch(`${url}${request._id}`);
+  const results = await response.json();
+  const documents = results as IVehicle;
+
+  return documents;
 }

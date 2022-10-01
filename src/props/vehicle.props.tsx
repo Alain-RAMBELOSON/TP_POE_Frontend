@@ -1,7 +1,7 @@
-import Vehicle from "../types/vehicle.type";
+import { IVehicle } from "../interfaces/vehicle.interface";
 
-type VehiculeProps = {
-  vehicle: Vehicle | unknown;
-};
+interface PVehicle {
+  vehicle: IVehicle;
+}
 
-export default VehiculeProps;
+export type { PVehicle };

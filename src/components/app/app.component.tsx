@@ -1,7 +1,8 @@
-import Navbar from "../navbar/navbar.component";
-import AppRoutes from "../../routes/app.routes";
+import { Component } from "solid-js";
+import { Navbar } from "../navbar/navbar.component";
+import { AppRoutes } from "../../routes/app.routes";
 
-export default function App() {
+const App: Component = () => {
   return (
     <>
       <h1>Rent</h1>
@@ -9,4 +10,6 @@ export default function App() {
       <AppRoutes></AppRoutes>
     </>
   );
-}
+};
+
+export { App };

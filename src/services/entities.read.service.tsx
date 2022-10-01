@@ -1,12 +1,12 @@
 import * as config from "../config.json";
-import Request from "../types/request.type";
-import Entity from "../enum/entity.enum";
+import { IRequest } from "../interfaces/request.interface";
+import { EEntity } from "../enum/entity.enum";
 import axios from "axios";
 
-export default async function getEntities(request: Request) {
+const getEntities = async (request: IRequest) => {
   let url: String = "";
 
-  if (request.entity === Entity.Vehicle) {
+  if (request.entity === EEntity.Vehicle) {
     url = config.api.vehicle.getVehicles;
   }
 
@@ -14,3 +14,5 @@ export default async function getEntities(request: Request) {
     .then((response) => response.data)
     .catch((error) => console.log(error));
 };
+
+export { getEntities };

@@ -1,11 +1,9 @@
 import { Routes, Route } from "@solidjs/router";
+import { VehiclePage } from "../pages/vehicle/vehicle.page";
+import { CustomerPage } from "../pages/customer/customer.page";
+import { RentPage } from "../pages/rent/rent.page";
 
-
-import VehiclePage from "../pages/vehicle/vehicle.page";
-import CustomerPage from "../pages/customer/customer.page";
-import RentPage from "../pages/rent/rent.page";
-
-export default function AppRoutes() {
+const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" component={VehiclePage} />
@@ -14,4 +12,6 @@ export default function AppRoutes() {
       <Route path="/rent" component={RentPage} />
     </Routes>
   );
-}
+};
+
+export { AppRoutes };
