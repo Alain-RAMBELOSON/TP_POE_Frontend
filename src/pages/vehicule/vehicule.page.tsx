@@ -13,6 +13,7 @@ export default function VehiclePage() {
 
   return (
     <>
+      <div>Vehicule Page</div>
       <For each={getVehicles()} fallback={<div>Loading...</div>}>
         {(vehicule) => <Vehicule vehicule={vehicule} />}
       </For>
