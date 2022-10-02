@@ -1,7 +1,7 @@
 import { Component, JSX } from "solid-js";
 
 const RentPage: Component = (): JSX.Element => {
-  return <div>Rent Page</div>;
+  return <h2>Rent Page</h2>;
 };
 
 export { RentPage };

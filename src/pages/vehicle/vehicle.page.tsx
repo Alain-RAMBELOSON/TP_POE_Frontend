@@ -14,14 +14,14 @@ const VehiclePage: Component = (): JSX.Element => {
 
   onMount(async () => {
     const response = await getEntities(body);
-    console.log("Vehicle Page : onMount");
-    console.log(response);
+    // console.log("Vehicle Page : onMount");
+    // console.log(response);
     setVehicles(response);
   });
 
   return (
     <>
-      <div>Vehicule Page</div>
+      <h2>Vehicule Page</h2>
       <For each={getVehicles()}>
         {(vehicle: TVehicle) => <Vehicle vehicle={vehicle} />}
       </For>
