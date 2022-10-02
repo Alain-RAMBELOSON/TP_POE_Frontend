@@ -1,7 +1,7 @@
-import { Component } from "solid-js";
+import { Component, JSX } from "solid-js";
 import { ICard } from "../../props/card.props";
 
-const Card: Component<ICard> = (props) => {
+const Card: Component<ICard> = (props): JSX.Element => {
   return (
     <>
       <div>Card Component</div>

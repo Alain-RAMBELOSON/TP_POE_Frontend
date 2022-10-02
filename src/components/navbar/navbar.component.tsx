@@ -1,7 +1,7 @@
-import { Component } from "solid-js";
+import { Component, JSX } from "solid-js";
 import { Link } from "@solidjs/router";
 
-const Navbar: Component = () => {
+const Navbar: Component = (): JSX.Element => {
   return (
     <>
       <nav>

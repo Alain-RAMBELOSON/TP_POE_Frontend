@@ -1,7 +1,7 @@
-import { IVehicle } from "../interfaces/vehicle.interface";
+import { TVehicle } from "../types/vehicle.type";
 
 interface PVehicle {
-  vehicle: IVehicle;
+  vehicle: TVehicle;
 }
 
 export type { PVehicle };

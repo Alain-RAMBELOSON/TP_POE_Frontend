@@ -1,9 +1,9 @@
 import * as config from "../config.json";
-import { IRequest } from "../interfaces/request.interface";
-import { EEntity } from "../enum/entity.enum";
-import { IVehicle } from "../interfaces/vehicle.interface";
+import { IVehicleBody } from "../bodies/vehicle.body";
+import { EEntity } from "../entities/list.entities";
+import { TVehicle } from "../types/vehicle.type";
 
-const getEntities = async (request: IRequest): Promise<IVehicle[]> => {
+const getEntities = async (request: IVehicleBody): Promise<TVehicle[]> => {
   let url: String = "";
 
   if (request.entity === EEntity.Vehicle) {
@@ -12,7 +12,7 @@ const getEntities = async (request: IRequest): Promise<IVehicle[]> => {
 
   const response = await fetch(`${url}`);
   const json = await response.json();
-  const data = json as IVehicle[];
+  const data = json as TVehicle[];
 
   return data;
 };

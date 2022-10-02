@@ -1,9 +1,9 @@
-interface IVehicle {
+interface TVehicle {
   _id: string;
   plateNumber: string;
 }
 
-interface IVehicle {
+interface TVehicle {
   brand?: string;
   model?: string;
   condition?: string;
@@ -15,4 +15,4 @@ interface IVehicle {
   __v?: Number;
 }
 
-export type { IVehicle };
+export type { TVehicle };

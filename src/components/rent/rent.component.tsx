@@ -1,6 +1,6 @@
-import { Component } from "solid-js";
+import { Component, JSX } from "solid-js";
 
-const Rent: Component = () => {
+const Rent: Component = (): JSX.Element => {
   return (
     <div>
       <div>Rent</div>

@@ -1,6 +1,6 @@
-import { Component } from "solid-js";
+import { Component, JSX } from "solid-js";
 
-const Customer: Component = () => {
+const Customer: Component = (): JSX.Element => {
   return (
     <div>
       <div>Customer</div>

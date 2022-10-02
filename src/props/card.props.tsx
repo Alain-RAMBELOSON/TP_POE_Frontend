@@ -1,9 +1,9 @@
-import { EEntity } from "../enum/entity.enum";
-import { IVehicle } from "../interfaces/vehicle.interface";
+import { EEntity } from "../entities/list.entities";
+import { TVehicle } from "../types/vehicle.type";
 
 interface ICard {
   type: EEntity;
-  entity: IVehicle;
+  entity: TVehicle;
 }
 
 export type { ICard };

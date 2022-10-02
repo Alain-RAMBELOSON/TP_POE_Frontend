@@ -1,19 +1,21 @@
-import { Component, createSignal, For, onMount } from "solid-js";
-import { EEntity } from "../../enum/entity.enum";
+import { Component, createSignal, For, JSX, onMount } from "solid-js";
+import { IVehicleBody } from "../../bodies/vehicle.body";
+import { EEntity } from "../../entities/list.entities";
 import { getEntities } from "../../services/entities.read.service";
 import { Vehicle } from "../../components/vehicle/vehicle.component";
-import { IVehicle } from "../../interfaces/vehicle.interface";
+import { TVehicle } from "../../types/vehicle.type";
 
-const VehiclePage: Component = () => {
-  const request = {
+const VehiclePage: Component = (): JSX.Element => {
+  const body: IVehicleBody = {
     entity: EEntity.Vehicle,
   };
 
-  const [getVehicles, setVehicles] = createSignal<IVehicle[]>([]);
+  const [getVehicles, setVehicles] = createSignal<TVehicle[]>([]);
 
   onMount(async () => {
-    const response = await getEntities(request);
-    console.log("Vehicle Page", response);
+    const response = await getEntities(body);
+    console.log("Vehicle Page : onMount");
+    console.log(response);
     setVehicles(response);
   });
 
@@ -21,7 +23,7 @@ const VehiclePage: Component = () => {
     <>
       <div>Vehicule Page</div>
       <For each={getVehicles()}>
-        {(vehicle: IVehicle) => <Vehicle vehicle={vehicle} />}
+        {(vehicle: TVehicle) => <Vehicle vehicle={vehicle} />}
       </For>
     </>
   );
