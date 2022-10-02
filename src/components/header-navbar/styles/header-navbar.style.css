@@ -3,6 +3,10 @@
   color: white;
   display: flex;
   height: 75px;
+  z-index: 1;
+  overflow-x: hidden;
+  position: fixed;
+  width: 100%;
 }
 
 .header {
