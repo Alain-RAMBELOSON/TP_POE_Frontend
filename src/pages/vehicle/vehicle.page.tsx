@@ -21,7 +21,7 @@ const VehiclePage: Component = (): JSX.Element => {
 
   return (
     <>
-      <div>Vehicule Page</div>
+      <h2>Vehicule Page</h2>
       <For each={getVehicles()}>
         {(vehicle: TVehicle) => <Vehicle vehicle={vehicle} />}
       </For>

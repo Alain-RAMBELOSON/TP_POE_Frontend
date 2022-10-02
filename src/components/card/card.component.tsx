@@ -4,7 +4,7 @@ import { ICard } from "../../props/card.props";
 const Card: Component<ICard> = (props): JSX.Element => {
   return (
     <>
-      <div>Card Component</div>
+      <h3>Card Component</h3>
       <>{props.entity.plateNumber}</>
     </>
   );
