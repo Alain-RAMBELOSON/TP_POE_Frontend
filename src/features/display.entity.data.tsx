@@ -16,13 +16,13 @@ const displayEntityData = (
   entity: Object,
   filter: String[]
 ): JSX.Element => {
-  let entityLabels: any = undefined;
+  let entityLabels: any;
 
   if (type === EEntity.Vehicle) {
     entityLabels = EVehicleLabels;
   }
 
-  const filteredLabels = () => {
+  const filteredLabels = (): String[] => {
     let filteredLabels: String[] = [];
     Object.values(entityLabels).map((label: any) => {
       if (filter.includes(label)) {
@@ -34,10 +34,10 @@ const displayEntityData = (
 
   return (
     <>
-      <div class="card-data">
+      <div class="card-content-layout">
         <For each={filteredLabels()}>
-          {(label, i) => (
-            <div>
+          {(label: String, i: Function) => (
+            <div class="card-content">
               {label as JSX.Element} :{" "}
               {
                 ObjectUtils.valuesToArray(entity).filter((element) => {

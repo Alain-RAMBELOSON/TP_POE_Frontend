@@ -1,0 +1,21 @@
+.card-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  max-width: calc(100% - 400px);
+  max-height: calc(100% - 75px);
+}
+
+.right-panel-layout {
+  height: 100%;
+  width: 400px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(255, 36, 7);
+  overflow-x: hidden;
+  margin-top: 75px;
+  background: #cfcfcf;
+  border-radius: 7px;
+  box-shadow: 0 0 10px 2px #d0d0d0;
+}

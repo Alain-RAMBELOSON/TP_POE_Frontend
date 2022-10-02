@@ -10,11 +10,10 @@ const getEntities = async (request: IVehicleBody): Promise<TVehicle[]> => {
     url = config.api.vehicle.getVehicles;
   }
 
-  const response = await fetch(`${url}`);
-  const json = await response.json();
-  const data = json as TVehicle[];
+  const response: Response = await fetch(`${url}`);
+  const json: TVehicle[] = await response.json();
 
-  return data;
+  return json;
 };
 
 export { getEntities };

@@ -3,6 +3,10 @@
   color: white;
   display: flex;
   height: 75px;
+  z-index: 1000;
+  overflow-x: hidden;
+  position: fixed;
+  width: 100%;
 }
 
 .header {
@@ -10,14 +14,14 @@
   margin-left: 20px;
 }
 
-.link-list {
+.navlink-list {
   display: flex;
   list-style: none;
   margin-top: 35px;
   margin-left: 50px;
 }
 
-.link-list li {
+.navlink {
   margin-right: 20px;
 }
 
