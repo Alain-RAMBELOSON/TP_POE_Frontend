@@ -1,0 +1,32 @@
+.header-navbar {
+  background-color: black;
+  color: white;
+  display: flex;
+  height: 75px;
+}
+
+.header {
+  margin-top: 12px;
+  margin-left: 20px;
+}
+
+.link-list {
+  display: flex;
+  list-style: none;
+  margin-top: 35px;
+  margin-left: 50px;
+}
+
+.link-list li {
+  margin-right: 20px;
+}
+
+.navlink {
+  color: white;
+  text-decoration: none;
+}
+
+.navlink:hover {
+  color: lightskyblue;
+  text-decoration: underline;
+}

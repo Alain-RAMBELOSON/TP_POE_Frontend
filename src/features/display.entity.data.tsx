@@ -5,7 +5,7 @@ import { ObjectUtils } from "../utils/object.utils";
 
 /**
  * Adds a node to the DOM tree to display the data of an entity.
- * 
+ *
  * @param type Entity type
  * @param entity Entity object
  * @param display Array of labels and values
@@ -34,19 +34,20 @@ const displayEntityData = (
 
   return (
     <>
-      <h3>Card Component</h3>
-      <For each={filteredLabels()}>
-        {(label, i) => (
-          <div>
-            {label as JSX.Element} :{" "}
-            {
-              ObjectUtils.valuesToArray(entity).filter((element) => {
-                return element === ObjectUtils.valuesToArray(entity)[i()];
-              }) as JSX.Element
-            }
-          </div>
-        )}
-      </For>
+      <div class="card-data">
+        <For each={filteredLabels()}>
+          {(label, i) => (
+            <div>
+              {label as JSX.Element} :{" "}
+              {
+                ObjectUtils.valuesToArray(entity).filter((element) => {
+                  return element === ObjectUtils.valuesToArray(entity)[i()];
+                }) as JSX.Element
+              }
+            </div>
+          )}
+        </For>
+      </div>
     </>
   );
 };

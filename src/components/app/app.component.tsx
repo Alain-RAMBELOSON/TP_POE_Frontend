@@ -1,12 +1,12 @@
 import { Component, JSX } from "solid-js";
-import { Navbar } from "../navbar/navbar.component";
+import { HeaderNavBar } from "../header-navbar/header-navbar.component";
 import { AppRoutes } from "../../routes/app.routes";
+import "./styles/app.styles.css";
 
 const App: Component = (): JSX.Element => {
   return (
     <>
-      <h1>Rent</h1>
-      <Navbar></Navbar>
+      <HeaderNavBar></HeaderNavBar>
       <AppRoutes></AppRoutes>
     </>
   );
