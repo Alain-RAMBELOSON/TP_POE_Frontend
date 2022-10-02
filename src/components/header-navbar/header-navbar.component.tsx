@@ -11,7 +11,7 @@ const HeaderNavBar: Component = (): JSX.Element => {
         </div>
         <div class="navbar">
           <nav>
-            <ul class="link-list">
+            <ul class="navlink-list">
               <li>
                 <Link href="/vehicle" class="navlink">
                   Vehicles

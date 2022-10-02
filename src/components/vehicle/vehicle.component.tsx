@@ -14,8 +14,8 @@ const Vehicle: Component<PVehicle> = (props): JSX.Element => {
 
   const [getVehicle, setVehicle] = createSignal<TVehicle>({} as TVehicle);
 
-  onMount(async () => {
-    const response = await getEntityByID(body);
+  onMount(async (): Promise<void> => {
+    const response: TVehicle = await getEntityByID(body);
     setVehicle(response);
   });
 

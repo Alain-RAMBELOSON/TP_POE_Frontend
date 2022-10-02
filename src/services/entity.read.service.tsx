@@ -10,11 +10,10 @@ const getEntityByID = async (request: IVehicleBody): Promise<TVehicle> => {
     url = config.api.vehicle.getVehicleByID;
   }
 
-  const response = await fetch(`${url}${request._id}`);
-  const json = await response.json();
-  const data = json as TVehicle;
+  const response: Response = await fetch(`${url}${request._id}`);
+  const json: TVehicle = await response.json();
 
-  return data;
+  return json;
 };
 
 export { getEntityByID };
