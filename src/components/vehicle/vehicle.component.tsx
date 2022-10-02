@@ -16,8 +16,6 @@ const Vehicle: Component<PVehicle> = (props): JSX.Element => {
 
   onMount(async () => {
     const response = await getEntityByID(body);
-    // console.log("Vehicle Component : onMount");
-    // console.log(response);
     setVehicle(response);
   });
 

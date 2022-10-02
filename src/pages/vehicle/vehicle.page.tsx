@@ -14,8 +14,6 @@ const VehiclePage: Component = (): JSX.Element => {
 
   onMount(async () => {
     const response = await getEntities(body);
-    // console.log("Vehicle Page : onMount");
-    // console.log(response);
     setVehicles(response);
   });
 
