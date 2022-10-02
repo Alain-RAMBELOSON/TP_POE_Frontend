@@ -1,8 +1,16 @@
 import { For, JSX } from "solid-js";
-import { EEntity } from "../../entities/list.entities";
-import { EVehicleLabels } from "../../labels/vehicle.labels";
-import { ObjectUtils } from "../../utils/object.utils";
+import { EEntity } from "../entities/list.entities";
+import { EVehicleLabels } from "../labels/vehicle.labels";
+import { ObjectUtils } from "../utils/object.utils";
 
+/**
+ * Adds a node to the DOM tree to display the data of an entity.
+ * 
+ * @param type Entity type
+ * @param entity Entity object
+ * @param display Array of labels and values
+ * @returns DOM structure update
+ */
 const displayEntityData = (
   type: EEntity,
   entity: Object,
